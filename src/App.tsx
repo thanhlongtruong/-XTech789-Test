@@ -6,12 +6,14 @@ import { Detail } from "./views/Detail";
 import { Home } from "./views/Home";
 
 import "./App.css";
+import { CartController } from "./controllers/cartController";
 
 export function App() {
   const [cartCount, setCartCount] = useState(0);
 
   const handleAddToCart = () => {
-    setCartCount((prev) => prev + 1);
+    const updatedCount = CartController.handleAddToCart(cartCount);
+    setCartCount(updatedCount);
   };
 
   return (

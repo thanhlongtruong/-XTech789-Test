@@ -22,9 +22,7 @@ interface HomeProps {
 export const Home: React.FC<HomeProps> = ({ onAddToCart }) => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-6">
-      {/* Top Section: Sidebar Categories & Hero Banner */}
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-12">
-        {/* Categories Sidebar */}
         <div className="hidden lg:block bg-gray-50 rounded-xl border border-gray-100 h-fit">
           <h3 className="font-bold text-[#4A154B] mb-3 text-sm uppercase tracking-wider border-b p-4">
             Categories
@@ -43,7 +41,6 @@ export const Home: React.FC<HomeProps> = ({ onAddToCart }) => {
           </ul>
         </div>
 
-        {/* Hero Banners */}
         <div className="lg:col-span-3 flex flex-col gap-4">
           <div className="bg-[#2D1233] text-white rounded-2xl flex flex-col justify-center overflow-hidden p-8 md:p-12 min-h-[320px]">
             <h1 className="text-3xl md:text-5xl font-extrabold mt-3 mb-6">
@@ -58,7 +55,6 @@ export const Home: React.FC<HomeProps> = ({ onAddToCart }) => {
             </button>
           </div>
 
-          {/* Sub Banners */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             <div className="bg-purple-50 p-6 rounded-xl border border-purple-100 flex flex-col justify-between">
               <span className="text-xs text-purple-600 font-bold uppercase">

@@ -72,7 +72,7 @@ export const Header: React.FC<HeaderProps> = ({ cartCount }) => {
         </form>
 
         {/* Actions (Heart & Cart) */}
-        <div className="flex items-center gap-5 md:w-28">
+        <div className="flex items-center gap-5 md:w-28 w-14">
           <button className="hidden sm:flex items-center gap-1 text-gray-700 hover:text-[#4A154B] text-sm">
             <Heart size={20} />
             <span>0</span>
